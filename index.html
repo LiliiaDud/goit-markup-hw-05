@@ -46,7 +46,7 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>  
+          <button class="hero-button" type="button" data-modal-open>Order Service</button>  
         </div>         
       </section>
       <!--2 section-->
@@ -379,7 +379,7 @@
 			</div> 
 
 			<div class="container-icons">
-				<p class="footer-text footer-media-text">Social media</p>
+				<p class="footer-article">Social media</p>
 				<ul class="footer-contact-item">
 					<li class="footer-contact-list">
 						<a class="footer-contact-link" href="">
@@ -410,9 +410,151 @@
 						</a>
 					</li>
 				</ul>
+				
+			</div>
+			<div class="container-form">
+				<p class="footer-article">
+					Subscribe
+				</p>
+				<form class="footer-form">
+					<label 	
+						for="footer-email" 
+						aria-label="footer-email">
+						<input 
+							class="footer-input"
+							type="email"
+							name="footer-email"  
+							placeholder="E-mail"
+						/>
+					</label>
+					<button
+						type="submit"
+						class="btn footer-btn">
+						Subscribe
+						<svg 
+						class="send-icon" 
+						width="24" 
+						height="24">
+						<use href="./images/icons.svg#icon-send"></use>
+					</svg>
+					</button>
+				</form>
 			</div>
  		</div>
-
     </footer>
+
+	<div class="backdrop" data-modal> 
+		<div class="modal">
+<!--кнопка close-->
+			<button 
+				type="button" 
+				class="modal-close"
+				data-modal-close >
+				<svg 
+					class="modal-close-icon" 
+					width="8" 
+					height="8">
+				  	<use href="./images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+			<p class="modal-title">
+				Leave your contacts and we will call you back
+			</p>
+			<form class="modal-form">
+				<div class="modal-field">
+					<label 
+						class="modal-label-text"
+						for="user-name">
+						Name 
+					</label>
+					<div class="modal-input-cover">
+						<input type="text" 
+							class="modal-item modal-input"
+							name="user-name"
+							id="user-name"
+						/>
+						<svg 
+							class="modal-input-icon" 
+							width="20" 
+							height="23">
+							<use href="./images/icons.svg#icon-person"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="modal-field">
+					<label 
+						class="modal-label-text"
+						for="user-tel">
+						Phone
+					</label>	
+					<div class="modal-input-cover">
+						<input type="tel" 
+							class="modal-item modal-input"
+							name="user-phone"
+							id="user-tel"
+						/>
+						<svg 
+							class="modal-input-icon" 
+							width="18" 
+							height="24">
+							<use href="./images/icons.svg#icon-phone"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="modal-field">
+					<label 
+						class="modal-label-text"
+						for="user-email"> 
+						Email
+					</label>	
+					<div class="modal-input-cover">
+						<input type="email" 
+							class="modal-item modal-input"
+							name="user-email"
+							id="user-email"
+						/>
+						<svg 
+							class="modal-input-icon" 
+							width="18" 
+							height="24">
+							<use href="./images/icons.svg#icon-email"></use>
+						</svg>
+					</div>
+				</div>
+				<div class="modal-comment">
+					<label 
+						class="modal-label-text"
+						for="user-comment"> 
+						Comment
+					</label>
+					<textarea type="text" 
+						class="modal-textarea modal-item"
+						name="user-comment"
+						id="user-comment"
+						placeholder="Text input"></textarea>
+				</div>
+
+				<div class="modal-checkbox">
+					<input type="checkbox" 
+						name="policy"
+						id="policy"
+						class="modal-check"
+						value="true"
+					/>
+					<label 
+						for="policy" 
+						class="check-text">
+						<span class="check-element">
+							I accept the terms and conditions of the 
+						</span>
+						<a href="">Privacy Policy</a>
+					</label>
+				</div>
+				<button class="modal-button" type="submit">Send</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="./js/modal.js"></script>
   </body>
 </html>
