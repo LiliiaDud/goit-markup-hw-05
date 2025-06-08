@@ -477,14 +477,12 @@ img {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    gap: 16px;
     border-radius: 4px;
     border: none;
     padding: 8px 24px;
     min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
-    margin-left: 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
